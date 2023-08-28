@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bebas+Neue&family=Fasthand&family=Kaushan+Script&family=Lumanosimo&family=Pompiere&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(180deg, #f9f8f8, #d8d8d8);
+}
+
+header {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 50px 100px;
+}
+header .logo {
+  transition: 0.5s;
+}
+header .logo p {
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+}
+header .logo:hover {
+  transform: scale(1.1);
+}
+header .menu-lineas {
+  display: none;
+}
+header .menu {
+  display: flex;
+  gap: 2rem;
+}
+header .menu__item {
+  font-size: 25px;
+  padding-inline: 10px;
+}
+header .menu__item a {
+  color: black;
+}
+header .menu .mi {
+  padding-inline: 20px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+main {
+  margin-inline: 50px;
+  padding-bottom: 100px;
+  padding-inline: 50px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+main .products {
+  display: flex;
+}
+main .products .product {
+  margin: 40px;
+  text-align: center;
+  flex-basis: calc(25% - 20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+main .products .product img {
+  width: 250px;
+  background-size: auto;
+}
+main .products .product .btn-1 {
+  background-color: rgb(62, 60, 60);
+  margin: 10px 5px;
+  padding: 5px 15px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
+}
+.navbar__item {
+  transition: 1s;
+}
+.navbar__item a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.navbar .pd {
+  margin-inline: 20px;
+  padding-inline: 20px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.navbar .sub {
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav {
+  width: 60%;
+  margin-block: 50px;
+  padding-top: 20px;
+  border-top: 1px solid black;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+.footer__nav li {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__nav li p {
+  font-size: 11px;
+}
+
+.main-login {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-login .login-content {
+  border: 1px solid black;
+  padding: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-login .login-content h3 {
+  position: absolute;
+  top: 515px;
+  left: 610px;
+}
+.main-login .login-content .content-formulario {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.main-login .login-content .content-formulario .formulario {
+  width: 300px;
+  background-color: none;
+  margin-inline: 70px;
+}
+.main-login .login-content .content-formulario .formulario .form {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.main-login .login-content .content-formulario .formulario .form input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #000000;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+}
+.main-login .login-content .content-formulario .formulario .form label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1PX solid #000000;
+}
+.main-login .login-content .content-formulario .formulario .form label:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  border-bottom: 3px solid #000000;
+  transform: translate(-100%);
+  transition: all 0.3s ease;
+}
+.main-login .login-content .content-formulario .formulario .form label span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.main-login .login-content .content-formulario .crear-cuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.main-login .login-content .content-formulario .crear-cuenta a {
+  border: 1px solid black;
+  padding: 5px 30px;
+  color: black;
+  box-shadow: 0 0 5px #474646;
+}
+.main-login .login-content .login-img img {
+  max-width: 300px;
+}
+.main-login .form input:focus + .label .span,
+.main-login .form input:valid + .label .span {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #000000;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 250px;
+    background-repeat: no-repeat;
+    padding: 35px;
+    padding-top: 60px;
+  }
+  main .products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .products .product {
+    margin-top: 70px;
+    margin-inline: 50px;
+  }
+  main .products .product img {
+    width: 200px;
+  }
+  .footer__nav {
+    gap: 3rem;
+  }
+  .footer__nav li {
+    font-size: 25px;
+  }
+  .footer__nav li p {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    padding: 20px;
+    margin: 0;
+    height: 250PX;
+    width: 100%;
+    background-size: cover;
+    gap: 12rem;
+  }
+  header .logo {
+    margin-top: 20px;
+  }
+  header .logo p {
+    font-size: 30px;
+  }
+  header .menu {
+    display: none;
+  }
+  header .menu-lineas {
+    display: block;
+  }
+  header .menu-lineas i {
+    font-size: 30px;
+  }
+  .navbar__item a {
+    font-size: 16px;
+  }
+  main {
+    margin: 0;
+    padding: 10PX;
+    border: none;
+  }
+  main .products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .products .product {
+    margin-top: 50px;
+  }
+  main .products .product img {
+    width: 200px;
+  }
+  .footer__nav {
+    gap: 1rem;
+  }
+  .footer__nav li {
+    font-size: 16px;
+  }
+  .footer__nav li p {
+    display: none;
+  }
+}
+header {
+  width: 96%;
+  background-image: url(../imagenes/enredaderas.png);
+}/*# sourceMappingURL=styles.css.map */

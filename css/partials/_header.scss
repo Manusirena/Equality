@@ -1,0 +1,50 @@
+header {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 50px 100px;
+
+
+    .logo {
+        transition: .5s;
+        
+        & p {
+            font-size: 40px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .menu-lineas {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        gap: 2rem;
+        
+        &__item {
+            font-size: 25px;
+            padding-inline: 10px;
+
+            & a {
+                color: black;
+            }
+
+            
+        }
+
+        .mi {
+            padding-inline: 20px;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+
+        
+    }
+}
+

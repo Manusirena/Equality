@@ -1,0 +1,33 @@
+main {
+    margin-inline: 50px;
+    padding-bottom: 100px;
+    padding-inline: 50px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+    .products {
+     display: flex;
+    .product {
+        margin: 40px;
+        text-align: center;
+        flex-basis: calc(25% - 20px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+
+        
+        & img {
+            width: 250px;
+            background-size: auto;
+        }
+
+        .btn-1 {
+            background-color: rgb(62, 60, 60);
+            margin: 10px 5px;
+            padding: 5px 15px;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+ }
+}
