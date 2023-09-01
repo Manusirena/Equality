@@ -9,13 +9,10 @@
         padding: 50px;
         width: 60%;
         display: flex;
-       justify-content: space-between;
-       align-items: center;
-
+        justify-content: center;
+        align-items: center;
        & h3 {
-        position: absolute;
-        top: 515px;
-        left:610px;
+            margin: 20px;
        }
 
         .content-formulario {

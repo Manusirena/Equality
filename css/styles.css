@@ -142,13 +142,11 @@ main .products .product .btn-1 {
   padding: 50px;
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .main-login .login-content h3 {
-  position: absolute;
-  top: 515px;
-  left: 610px;
+  margin: 20px;
 }
 .main-login .login-content .content-formulario {
   padding-top: 100px;
@@ -226,6 +224,7 @@ main .products .product .btn-1 {
   color: #000000;
 }
 
+/* mediaquaris shop */
 @media (max-width: 900px) {
   header {
     height: 250px;
@@ -255,7 +254,7 @@ main .products .product .btn-1 {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   header {
     padding: 20px;
     margin: 0;
@@ -305,6 +304,35 @@ main .products .product .btn-1 {
     font-size: 16px;
   }
   .footer__nav li p {
+    display: none;
+  }
+}
+/* mediaquaris log in */
+@media (max-width: 900px) {
+  .main-login {
+    padding-inline: 0;
+  }
+  .main-login .login-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-login .login-content .content-formulario {
+    padding-top: 50px;
+  }
+  .main-login .login-content .login-img {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .main-login .login-content {
+    border: none;
+    padding: 0;
+    width: 90%;
+  }
+  .main-login .login-content .content-formulario {
+    padding-top: 50px;
+  }
+  .main-login .login-content .login-img {
     display: none;
   }
 }

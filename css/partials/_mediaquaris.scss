@@ -1,3 +1,6 @@
+
+/* mediaquaris shop */
+
 @media (max-width: 900px) {
     header {
         height: 250px;
@@ -47,7 +50,7 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 
     header {
         padding: 20px;
@@ -70,6 +73,7 @@
 
         .menu-lineas {
             display: block;
+            
             
 
             & i {
@@ -120,6 +124,50 @@
                 & p {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+
+/* mediaquaris log in */
+
+@media (max-width: 900px) {
+
+    .main-login {
+        padding-inline: 0;
+
+        .login-content {
+            display: flex;
+            flex-direction: column;
+
+            .content-formulario {
+                padding-top: 50px;
+            }
+
+            .login-img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .main-login {
+        
+
+        .login-content {
+           border: none;
+            padding: 0;
+            width: 90%;
+
+            .content-formulario {
+                padding-top: 50px;
+            }
+
+            .login-img {
+                display: none;
             }
         }
     }
