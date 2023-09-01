@@ -34,21 +34,27 @@ header .logo p {
 header .logo:hover {
   transform: scale(1.1);
 }
-header .menu-lineas {
+header .abrir-menu,
+header .cerrar-menu {
   display: none;
 }
-header .menu {
+header .nav .nav-list {
+  list-style-type: none;
   display: flex;
   gap: 2rem;
 }
-header .menu__item {
+header .nav .nav-list li {
   font-size: 25px;
   padding-inline: 10px;
 }
-header .menu__item a {
-  color: black;
+header .nav .nav-list img {
+  display: none;
 }
-header .menu .mi {
+header .nav .nav-list a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+header .nav .nav-list .mi {
   padding-inline: 20px;
   border-right: 1px solid black;
   border-left: 1px solid black;
@@ -324,6 +330,9 @@ main .products .product .btn-1 {
   }
 }
 @media (max-width: 550px) {
+  .main-login {
+    margin: 20px;
+  }
   .main-login .login-content {
     border: none;
     padding: 0;
@@ -334,6 +343,59 @@ main .products .product .btn-1 {
   }
   .main-login .login-content .login-img {
     display: none;
+  }
+}
+@media (max-width: 650px) {
+  header .abrir-menu,
+  header .cerrar-menu {
+    cursor: pointer;
+    display: block;
+    border: 0;
+    font-size: 30px;
+    background-color: transparent;
+  }
+  header .cerrar-menu {
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+  header .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  header .nav .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .nav .nav-list .mi {
+    border: 0;
+  }
+  header .nav .nav-list img {
+    display: block;
+    width: 200px;
+  }
+  header .nav .nav-list li {
+    margin-inline: 50px;
+  }
+  header .nav .nav-list li a {
+    font-size: 20px;
+  }
+  header .nav .nav-list li i {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  header .visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
 header {

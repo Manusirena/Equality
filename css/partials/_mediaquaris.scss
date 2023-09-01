@@ -155,7 +155,7 @@
 @media (max-width: 550px) {
 
     .main-login {
-        
+        margin: 20px;
 
         .login-content {
            border: none;
@@ -172,3 +172,75 @@
         }
     }
 }
+
+@media (max-width: 650px) {
+
+    header {
+   .abrir-menu,
+   .cerrar-menu {
+    cursor: pointer;
+       display: block;
+       border: 0;
+       font-size: 30px;
+       background-color: transparent;
+   }
+   .cerrar-menu {
+     padding: 2rem;
+     padding-bottom: 1rem;
+   }
+
+       .nav {
+           opacity: 0;
+           visibility: hidden;
+
+           display: flex;
+           flex-direction: column;
+           align-items: end;
+           position: absolute;
+           top: 0;
+           right: 0;
+           bottom: 0;
+           background-color: #ffffff;
+           box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+           z-index: 1;
+           
+
+           & .nav-list {
+               flex-direction: column;
+               align-items: center;
+
+               .mi {
+                   border: 0;
+               }
+               & img{
+                   display: block;
+                   width: 200px;
+               }
+
+               & li {
+            
+                  margin-inline: 50px;
+
+                   &  a {
+                       font-size: 20px;
+                   
+                   }
+   
+                   &  i {
+                       cursor: pointer;
+                       font-size: 25px;
+                 
+                   }
+               } 
+           }
+       }
+                
+       .visible {
+           opacity: 1;
+           visibility: visible;  
+       }
+}
+
+   
+}
+

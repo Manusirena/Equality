@@ -19,32 +19,39 @@ header {
         }
     }
 
-    .menu-lineas {
+    .abrir-menu,
+    .cerrar-menu{
         display: none;
     }
 
-    .menu {
-        display: flex;
-        gap: 2rem;
-        
-        &__item {
-            font-size: 25px;
-            padding-inline: 10px;
+    .nav {
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            gap: 2rem;
 
-            & a {
-                color: black;
+            & li {
+                font-size: 25px;
+                padding-inline: 10px;
             }
 
-            
-        }
+            & img {
+                display: none;
+            }
 
-        .mi {
-            padding-inline: 20px;
-            border-right: 1px solid black;
-            border-left: 1px solid black;
-        }
+            & a {
+                text-decoration: none;
+                color: #2c2c2c;
+            }
 
-        
-    }
+            .mi {
+                padding-inline: 20px;
+                border-right: 1px solid black;
+                border-left: 1px solid black;
+            }
+        }
+}
+   
+
 }
 
